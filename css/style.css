@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    background: #5D6670;
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    padding: 10px;
+    width: auto;
+    height: 40px;
+    /* background-color: #41B883; */
+    background-color: #35495E;
+    color: white;
+    border-bottom: 3px solid #41B883;
+}
+
+.brand {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #41B883;
+    margin: auto 0;
+}
+
+.horizontal-list {
+    list-style: none;
+    font-size: .9em;
+    padding-left: 10px;
+    margin: auto 0;
+}
+
+.horizontal-list li {
+    display: inline;
+    padding: 10px 10px 0 10px;
+}
+
+.horizontal-list li a {
+    color: white;
+    text-decoration: none;
+}
+
+.horizontal-list li a:hover {
+    color: wheat;
+}
