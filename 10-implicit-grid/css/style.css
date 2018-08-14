@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: [inicio]1fr [linea2] 1fr [linea3] 1fr [destacado-end] 1fr [linea5] 1fr [destacado2-end] 1fr [linea7] 1fr [final];
+    /* grid-template-rows: [inicio] 200px [inicio2] 200px [final]; */
+    grid-gap: 5px;
+    height: 100vh;
+    /* Maneja los grid restantes indicandoles que se coloquen en columnas, por defecto están en rows */
+    /* grid-auto-flow: column;
+    grid-auto-columns: 50px 100px; */
+    grid-auto-rows: 50px 100px
+}
+
+.item {
+    background: lightblue;
+    padding: 10px;
+    border: 1px solid brown;
+}
+
+.item:nth-of-type(1) {
+    grid-column: inicio / destacado-end;
+    grid-row: inicio / final;
+}
+
+.item:nth-of-type(2) {
+    grid-column: destacado-end / destacado2-end;
+    grid-row: inicio / final;
+}
+
+.item:nth-of-type(3) {
+    grid-column: destacado2-end / final;
+}

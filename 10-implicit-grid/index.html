@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Nombres de las líneas - Grid Layout</title>
+    <title>Grid implícito - Grid Layout</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -13,6 +13,16 @@
         <div class="item">Item #2</div>
         <div class="item">Item #3</div>
         <div class="item">Item #4</div>
+        <div class="item">Item #5</div>
+        <div class="item">Item #5</div>
+        <div class="item">Item #5</div>
+        <div class="item">Item #5</div>
+        <div class="item">Item #5</div>
+        <div class="item">Item #5</div>
+        <div class="item">Item #5</div>
+        <div class="item">Item #5</div>
+        <div class="item">Item #5</div>
+        <div class="item">Item #5</div>
         <div class="item">Item #5</div>
     </section>
     <p>
@@ -24,6 +34,16 @@
             &lt;div class="item"&gt;Item #2&lt;/div&gt;
             &lt;div class="item"&gt;Item #3&lt;/div&gt;
             &lt;div class="item"&gt;Item #4&lt;/div&gt;
+            &lt;div class="item"&gt;Item #5&lt;/div&gt;
+            &lt;div class="item"&gt;Item #5&lt;/div&gt;
+            &lt;div class="item"&gt;Item #5&lt;/div&gt;
+            &lt;div class="item"&gt;Item #5&lt;/div&gt;
+            &lt;div class="item"&gt;Item #5&lt;/div&gt;
+            &lt;div class="item"&gt;Item #5&lt;/div&gt;
+            &lt;div class="item"&gt;Item #5&lt;/div&gt;
+            &lt;div class="item"&gt;Item #5&lt;/div&gt;
+            &lt;div class="item"&gt;Item #5&lt;/div&gt;
+            &lt;div class="item"&gt;Item #5&lt;/div&gt;
             &lt;div class="item"&gt;Item #5&lt;/div&gt;
         &lt;/section&gt;
     </pre>
@@ -38,9 +58,13 @@
         .container {
             display: grid;
             grid-template-columns: [inicio]1fr [linea2] 1fr [linea3] 1fr [destacado-end] 1fr [linea5] 1fr [destacado2-end] 1fr [linea7] 1fr [final];
-            grid-template-rows: [inicio] 200px [inicio2] 200px [final];
+            /* grid-template-rows: [inicio] 200px [inicio2] 200px [final]; */
             grid-gap: 5px;
-        
+            height: 100vh;
+            /* Maneja los grid restantes indicandoles que se coloquen en columnas, por defecto están en rows */
+            /* grid-auto-flow: column;
+            grid-auto-columns: 50px 100px; */
+            grid-auto-rows: 50px 100px
         }
         
         .item {
