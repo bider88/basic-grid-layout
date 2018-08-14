@@ -22,5 +22,43 @@
         <div class="item">Contenido #11</div>
         <div class="item">Contenido #12</div>
     </section>
+    <p>
+        HTML:
+    </p>
+    <pre>
+        &lt;section class="container"&gt;
+            &lt;div class="item"&gt;Contenido #1&lt;/div&gt;
+            &lt;div class="item"&gt;Contenido #2&lt;/div&gt;
+            &lt;div class="item"&gt;Contenido #3&lt;/div&gt;
+            &lt;div class="item"&gt;Contenido #4&lt;/div&gt;
+            &lt;div class="item"&gt;Contenido #5&lt;/div&gt;
+            &lt;div class="item"&gt;Contenido #6&lt;/div&gt;
+            &lt;div class="item"&gt;Contenido #7&lt;/div&gt;
+            &lt;div class="item"&gt;Contenido #8&lt;/div&gt;
+            &lt;div class="item"&gt;Contenido #9&lt;/div&gt;
+            &lt;div class="item"&gt;Contenido #10&lt;/div&gt;
+            &lt;div class="item"&gt;Contenido #11&lt;/div&gt;
+            &lt;div class="item"&gt;Contenido #12&lt;/div&gt;
+        &lt;/section&gt;
+    </pre>
+    <p>
+        CSS:
+    </p>
+    <pre>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .container {
+            display: grid;
+            grid-template-columns: 25% 200px 25%;
+        }
+        
+        .item {
+            background: lightblue;
+            padding: 10px;
+            border: 1px solid brown;
+        }
+    </pre>
 </body>
 </html>

@@ -63,11 +63,18 @@
         
         .container {
             display: grid;
-            grid-template: 300px 100px 100px / 50% 200px 100px;
+            /* grid-template: 300px 100px 100px / 50% 200px 100px; */
+            /* fr */
+            /* grid-template: 300px 100px 100px / 1fr 1fr 1fr; */
+            /* Repeat */
+            /* grid-template: 300px 100px 100px / repeat(4, 1fr); */
+            /* minmax */
+            /* grid-template: 300px 100px 100px / repeat(4, minmax(200px, 1fr)); */
+            grid-template: 300px 100px 100px / minmax(200px, 1fr) 1fr 1fr 1fr;
             /* grid-column-gap: 30px;
             grid-row-gap: 50px; */
             /* grid-gap: rows / comuns */
-            grid-gap: 10px 100px;
+            grid-gap: 10px;
         }
         
         .item {
