@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Alineación de filas y columnas - Grid Layout</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section class="container">
+        <div class="item">Item #1</div>
+        <div class="item">Item #2</div>
+        <div class="item">Item #3</div>
+        <div class="item">Item #4</div>
+        <div class="item">Item #5</div>
+        <div class="item">Item #6</div>
+        <div class="item">Item #7</div>
+        <div class="item">Item #8</div>
+        <div class="item">Item #9</div>
+        <div class="item">Item #10</div>
+        <div class="item">Item #11</div>
+        <div class="item">Item #12</div>
+    </section>
+    <p>
+        HTML:
+    </p>
+    <pre>
+        &lt;section class="container"&gt;
+            &lt;div class="item"&gt;Item #1&lt;/div&gt;
+            &lt;div class="item"&gt;Item #2&lt;/div&gt;
+            &lt;div class="item"&gt;Item #3&lt;/div&gt;
+            &lt;div class="item"&gt;Item #4&lt;/div&gt;
+            &lt;div class="item"&gt;Item #5&lt;/div&gt;
+            &lt;div class="item"&gt;Item #6&lt;/div&gt;
+            &lt;div class="item"&gt;Item #7&lt;/div&gt;
+            &lt;div class="item"&gt;Item #8&lt;/div&gt;
+            &lt;div class="item"&gt;Item #9&lt;/div&gt;
+            &lt;div class="item"&gt;Item #10&lt;/div&gt;
+            &lt;div class="item"&gt;Item #11&lt;/div&gt;
+            &lt;div class="item"&gt;Item #12&lt;/div&gt;
+        &lt;/section&gt;
+    </pre>
+    <p>
+        CSS:
+    </p>
+    <pre>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .container {
+            display: grid;
+            grid-gap: 5px;
+            height: 100vh;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            /* justify-items: start end center stretch; */
+            justify-items: center; 
+            /* align-items: start end center stretch; */
+            align-items: center;
+        }
+        
+        .item {
+            background: lightblue;
+            padding: 10px;
+            border: 1px solid brown;
+        }
+        
+        .item:nth-of-type(5) {
+            align-self: start;
+            justify-self: start;
+        }
+    </pre>
+</body>
+</html>
