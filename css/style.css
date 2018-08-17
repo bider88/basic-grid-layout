@@ -48,3 +48,8 @@ body {
 .horizontal-list li a:hover {
     color: wheat;
 }
+
+hr {
+    margin: 40px 0;
+    opacity: .5;
+}
