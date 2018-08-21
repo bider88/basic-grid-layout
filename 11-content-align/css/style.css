@@ -8,10 +8,11 @@ body {
     height: 100vh;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, 1fr);
+    /* Alineación de contenido */
     /* justify-items: start end center stretch; */
-    justify-items: center; 
+    justify-items: center; /* Alínea horizontalmente */ 
     /* align-items: start end center stretch; */
-    align-items: center;
+    align-items: stretch;  /* Alínea verticalmente */
 }
 
 .item {
@@ -21,6 +22,12 @@ body {
 }
 
 .item:nth-of-type(5) {
-    align-self: start;
+    /* Alínea el contenifo pero solo al item indicado verticalmente*/
+    align-self: end;
+    /* Alínea el contenifo pero solo al item indicado horizontalmente*/
     justify-self: start;
+}
+
+.comment {
+    color: #2e843e;
 }

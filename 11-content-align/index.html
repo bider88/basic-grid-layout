@@ -55,10 +55,11 @@
             height: 100vh;
             grid-template-columns: repeat(3, 1fr);
             grid-template-rows: repeat(4, 1fr);
-            /* justify-items: start end center stretch; */
-            justify-items: center; 
-            /* align-items: start end center stretch; */
-            align-items: center;
+            <span class="comment">/* Alineación de contenido */</span>
+            <span class="comment">/* justify-items: start end center stretch; */</span>
+            justify-items: center; <span class="comment">/* Alínea horizontalmente */</span> 
+            <span class="comment">/* align-items: start end center stretch; */</span>
+            align-items: stretch;  <span class="comment">/* Alínea verticalmente */</span>
         }
         
         .item {
@@ -68,7 +69,9 @@
         }
         
         .item:nth-of-type(5) {
-            align-self: start;
+            <span class="comment">/* Alínea el contenifo pero solo al item indicado verticalmente*/</span>
+            align-self: end;
+            <span class="comment">/* Alínea el contenifo pero solo al item indicado horizontalmente*/</span>
             justify-self: start;
         }
     </pre>
